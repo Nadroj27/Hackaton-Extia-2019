@@ -13,6 +13,8 @@
 		17041EF02322D77E007763ED /* Hackaton_Extia_2019.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17041EEE2322D77E007763ED /* Hackaton_Extia_2019.xcdatamodeld */; };
 		17041EF22322D77F007763ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17041EF12322D77F007763ED /* Assets.xcassets */; };
 		17041EF52322D77F007763ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17041EF32322D77F007763ED /* LaunchScreen.storyboard */; };
+		7BD3A69CE1B65A8442A9796F /* Pods_Hackaton_Extia_2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5912FFC536D432E0346E5B99 /* Pods_Hackaton_Extia_2019.framework */; };
+		AAA339C02322F11B00A5D67C /* PointofInterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA339BF2322F11B00A5D67C /* PointofInterestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		17041EF12322D77F007763ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17041EF42322D77F007763ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17041EF62322D77F007763ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5912FFC536D432E0346E5B99 /* Pods_Hackaton_Extia_2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackaton_Extia_2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C705DC4CC28BA42473E3251 /* Pods-Hackaton Extia 2019.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackaton Extia 2019.debug.xcconfig"; path = "Target Support Files/Pods-Hackaton Extia 2019/Pods-Hackaton Extia 2019.debug.xcconfig"; sourceTree = "<group>"; };
+		A22F3C63C8F3D39156509D12 /* Pods-Hackaton Extia 2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackaton Extia 2019.release.xcconfig"; path = "Target Support Files/Pods-Hackaton Extia 2019/Pods-Hackaton Extia 2019.release.xcconfig"; sourceTree = "<group>"; };
+		AAA339BF2322F11B00A5D67C /* PointofInterestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointofInterestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BD3A69CE1B65A8442A9796F /* Pods_Hackaton_Extia_2019.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				17041EE62322D77E007763ED /* Hackaton Extia 2019 */,
 				17041EE52322D77E007763ED /* Products */,
+				AD1EDD36DE8DE8D656EDC9CB /* Pods */,
+				B876D26502A04AB06469227A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +72,26 @@
 				17041EF32322D77F007763ED /* LaunchScreen.storyboard */,
 				17041EF62322D77F007763ED /* Info.plist */,
 				17041EEE2322D77E007763ED /* Hackaton_Extia_2019.xcdatamodeld */,
+				AAA339BF2322F11B00A5D67C /* PointofInterestViewController.swift */,
 			);
 			path = "Hackaton Extia 2019";
+			sourceTree = "<group>";
+		};
+		AD1EDD36DE8DE8D656EDC9CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C705DC4CC28BA42473E3251 /* Pods-Hackaton Extia 2019.debug.xcconfig */,
+				A22F3C63C8F3D39156509D12 /* Pods-Hackaton Extia 2019.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B876D26502A04AB06469227A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5912FFC536D432E0346E5B99 /* Pods_Hackaton_Extia_2019.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +101,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17041EF92322D77F007763ED /* Build configuration list for PBXNativeTarget "Hackaton Extia 2019" */;
 			buildPhases = (
+				E9D27237A82626680EDC772E /* [CP] Check Pods Manifest.lock */,
 				17041EE02322D77E007763ED /* Sources */,
 				17041EE12322D77E007763ED /* Frameworks */,
 				17041EE22322D77E007763ED /* Resources */,
@@ -133,6 +161,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E9D27237A82626680EDC772E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hackaton Extia 2019-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		17041EE02322D77E007763ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +193,7 @@
 			files = (
 				17041EEA2322D77E007763ED /* ViewController.swift in Sources */,
 				17041EE82322D77E007763ED /* AppDelegate.swift in Sources */,
+				AAA339C02322F11B00A5D67C /* PointofInterestViewController.swift in Sources */,
 				17041EF02322D77E007763ED /* Hackaton_Extia_2019.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +338,7 @@
 		};
 		17041EFA2322D77F007763ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C705DC4CC28BA42473E3251 /* Pods-Hackaton Extia 2019.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +356,7 @@
 		};
 		17041EFB2322D77F007763ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A22F3C63C8F3D39156509D12 /* Pods-Hackaton Extia 2019.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
