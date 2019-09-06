@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		17041EE82322D77E007763ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041EE72322D77E007763ED /* AppDelegate.swift */; };
-		17041EEA2322D77E007763ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041EE92322D77E007763ED /* ViewController.swift */; };
+		17041EEA2322D77E007763ED /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041EE92322D77E007763ED /* LoginVC.swift */; };
 		17041EED2322D77E007763ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17041EEB2322D77E007763ED /* Main.storyboard */; };
 		17041EF02322D77E007763ED /* Hackaton_Extia_2019.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17041EEE2322D77E007763ED /* Hackaton_Extia_2019.xcdatamodeld */; };
 		17041EF22322D77F007763ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17041EF12322D77F007763ED /* Assets.xcassets */; };
 		17041EF52322D77F007763ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17041EF32322D77F007763ED /* LaunchScreen.storyboard */; };
+		17E150252322EFBE00C3FB2B /* ScrollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E150242322EFBE00C3FB2B /* ScrollVC.swift */; };
+		17E150272322F5E800C3FB2B /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E150262322F5E800C3FB2B /* Page.swift */; };
+		17E150292322F65D00C3FB2B /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E150282322F65D00C3FB2B /* PageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17041EE42322D77E007763ED /* Hackaton Extia 2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hackaton Extia 2019.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17041EE72322D77E007763ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17041EE92322D77E007763ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		17041EE92322D77E007763ED /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		17041EEC2322D77E007763ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17041EEF2322D77E007763ED /* Hackaton_Extia_2019.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hackaton_Extia_2019.xcdatamodel; sourceTree = "<group>"; };
 		17041EF12322D77F007763ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17041EF42322D77F007763ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17041EF62322D77F007763ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17E150242322EFBE00C3FB2B /* ScrollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollVC.swift; sourceTree = "<group>"; };
+		17E150262322F5E800C3FB2B /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		17E150282322F65D00C3FB2B /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +62,10 @@
 		17041EE62322D77E007763ED /* Hackaton Extia 2019 */ = {
 			isa = PBXGroup;
 			children = (
+				17E150232322E6DD00C3FB2B /* Controller */,
+				17E150222322E6D400C3FB2B /* View */,
+				17E150212322E6CA00C3FB2B /* Model */,
 				17041EE72322D77E007763ED /* AppDelegate.swift */,
-				17041EE92322D77E007763ED /* ViewController.swift */,
 				17041EEB2322D77E007763ED /* Main.storyboard */,
 				17041EF12322D77F007763ED /* Assets.xcassets */,
 				17041EF32322D77F007763ED /* LaunchScreen.storyboard */,
@@ -65,6 +73,31 @@
 				17041EEE2322D77E007763ED /* Hackaton_Extia_2019.xcdatamodeld */,
 			);
 			path = "Hackaton Extia 2019";
+			sourceTree = "<group>";
+		};
+		17E150212322E6CA00C3FB2B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				17E150262322F5E800C3FB2B /* Page.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		17E150222322E6D400C3FB2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				17041EE92322D77E007763ED /* LoginVC.swift */,
+				17E150242322EFBE00C3FB2B /* ScrollVC.swift */,
+				17E150282322F65D00C3FB2B /* PageVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		17E150232322E6DD00C3FB2B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17041EEA2322D77E007763ED /* ViewController.swift in Sources */,
+				17041EEA2322D77E007763ED /* LoginVC.swift in Sources */,
+				17E150292322F65D00C3FB2B /* PageVC.swift in Sources */,
+				17E150252322EFBE00C3FB2B /* ScrollVC.swift in Sources */,
 				17041EE82322D77E007763ED /* AppDelegate.swift in Sources */,
 				17041EF02322D77E007763ED /* Hackaton_Extia_2019.xcdatamodeld in Sources */,
+				17E150272322F5E800C3FB2B /* Page.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
