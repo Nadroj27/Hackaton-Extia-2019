@@ -16,6 +16,7 @@
 		17E150252322EFBE00C3FB2B /* ScrollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E150242322EFBE00C3FB2B /* ScrollVC.swift */; };
 		17E150272322F5E800C3FB2B /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E150262322F5E800C3FB2B /* Page.swift */; };
 		17E150292322F65D00C3FB2B /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E150282322F65D00C3FB2B /* PageVC.swift */; };
+		AA24118423230CC200E57758 /* PointOfInterestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA24118323230CC200E57758 /* PointOfInterestVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		17E150242322EFBE00C3FB2B /* ScrollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollVC.swift; sourceTree = "<group>"; };
 		17E150262322F5E800C3FB2B /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		17E150282322F65D00C3FB2B /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
+		AA24118323230CC200E57758 /* PointOfInterestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOfInterestVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				17041EE92322D77E007763ED /* LoginVC.swift */,
 				17E150242322EFBE00C3FB2B /* ScrollVC.swift */,
 				17E150282322F65D00C3FB2B /* PageVC.swift */,
+				AA24118323230CC200E57758 /* PointOfInterestVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			files = (
 				17041EEA2322D77E007763ED /* LoginVC.swift in Sources */,
 				17E150292322F65D00C3FB2B /* PageVC.swift in Sources */,
+				AA24118423230CC200E57758 /* PointOfInterestVC.swift in Sources */,
 				17E150252322EFBE00C3FB2B /* ScrollVC.swift in Sources */,
 				17041EE82322D77E007763ED /* AppDelegate.swift in Sources */,
 				17041EF02322D77E007763ED /* Hackaton_Extia_2019.xcdatamodeld in Sources */,
