@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		17041EE82322D77E007763ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041EE72322D77E007763ED /* AppDelegate.swift */; };
-		17041EEA2322D77E007763ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17041EE92322D77E007763ED /* ViewController.swift */; };
 		17041EED2322D77E007763ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17041EEB2322D77E007763ED /* Main.storyboard */; };
 		17041EF02322D77E007763ED /* Hackaton_Extia_2019.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17041EEE2322D77E007763ED /* Hackaton_Extia_2019.xcdatamodeld */; };
 		17041EF22322D77F007763ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17041EF12322D77F007763ED /* Assets.xcassets */; };
@@ -20,7 +19,6 @@
 /* Begin PBXFileReference section */
 		17041EE42322D77E007763ED /* Hackaton Extia 2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hackaton Extia 2019.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17041EE72322D77E007763ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17041EE92322D77E007763ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		17041EEC2322D77E007763ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17041EEF2322D77E007763ED /* Hackaton_Extia_2019.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hackaton_Extia_2019.xcdatamodel; sourceTree = "<group>"; };
 		17041EF12322D77F007763ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				17041EE72322D77E007763ED /* AppDelegate.swift */,
-				17041EE92322D77E007763ED /* ViewController.swift */,
 				17041EEB2322D77E007763ED /* Main.storyboard */,
 				17041EF12322D77F007763ED /* Assets.xcassets */,
 				17041EF32322D77F007763ED /* LaunchScreen.storyboard */,
@@ -191,7 +188,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17041EEA2322D77E007763ED /* ViewController.swift in Sources */,
 				17041EE82322D77E007763ED /* AppDelegate.swift in Sources */,
 				AAA339C02322F11B00A5D67C /* PointofInterestViewController.swift in Sources */,
 				17041EF02322D77E007763ED /* Hackaton_Extia_2019.xcdatamodeld in Sources */,
