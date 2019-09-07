@@ -33,7 +33,7 @@ class PageVC: UIViewController {
         titleLabel?.adjustsFontForContentSizeCategory = true
         titleLabel?.textAlignment = NSTextAlignment.center
         titleLabel?.text = page.name
-        nextBtn = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+        nextBtn = UIButton(frame: CGRect(x: 100, y: screenHeight/2, width: 100, height: 400))
         nextBtn!.backgroundColor = .green
         nextBtn!.setTitle("Test Button", for: .normal)
         nextBtn!.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
@@ -43,5 +43,13 @@ class PageVC: UIViewController {
     
     @objc func buttonAction(sender: UIButton!) {
         print("Button tapped")
+        if (page.index == 2) {
+            if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "interestSegue") as? PointOfInterestVC
+            {
+                present(vc, animated: true, completion: nil)
+            }
+        } else {
+            print(page.index)
+        }
     }
 }
