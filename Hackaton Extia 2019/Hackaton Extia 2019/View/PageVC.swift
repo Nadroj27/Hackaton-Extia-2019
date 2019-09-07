@@ -28,15 +28,22 @@ class PageVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        titleLabel = UILabel(frame: CGRect(x:100, y: screenHeight/2, width: screenWidth - 100, height: 100))
+        titleLabel = UILabel(frame: CGRect(x:100, y: screenHeight/2, width: screenWidth - 50, height: 200))
         titleLabel?.center = CGPoint(x: screenWidth/2, y: screenHeight/2)
         titleLabel?.adjustsFontForContentSizeCategory = true
         titleLabel?.textAlignment = NSTextAlignment.center
+        titleLabel?.font = UIFont(name: "Headline", size: 18.00)
         titleLabel?.text = page.name
-        nextBtn = UIButton(frame: CGRect(x: 100, y: screenHeight/2, width: 100, height: 400))
-        nextBtn!.backgroundColor = .green
-        nextBtn!.setTitle("Test Button", for: .normal)
+        titleLabel?.numberOfLines = 4
+        titleLabel?.textColor = .white
+        
+        nextBtn = UIButton(frame: CGRect(x: screenWidth / 2 - 50, y: screenHeight / 2 + 200, width: 100, height: 50))
+        nextBtn!.backgroundColor = UIColor(red: 64/255, green: 229/255, blue: 118/255, alpha: 1.0)
+        nextBtn!.setTitle("Passer", for: .normal)
         nextBtn!.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        nextBtn!.layer.cornerRadius = 15.0
+        nextBtn!.layer.borderWidth = 2.0
+        nextBtn!.layer.borderColor = UIColor.white.cgColor
         self.view.addSubview(nextBtn!)
         self.view.addSubview(titleLabel!)
     }

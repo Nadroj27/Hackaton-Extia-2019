@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,7 @@
 		17E150272322F5E800C3FB2B /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E150262322F5E800C3FB2B /* Page.swift */; };
 		17E150292322F65D00C3FB2B /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E150282322F65D00C3FB2B /* PageVC.swift */; };
 		AA24118423230CC200E57758 /* PointOfInterestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA24118323230CC200E57758 /* PointOfInterestVC.swift */; };
+		AAED654A23236BA700B56A78 /* ReservedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAED654923236BA700B56A78 /* ReservedTVC.swift */; };
 		F86835805A3D4C21A8A4AAED /* Pods_Hackaton_Extia_2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131460D348B8A3BF2869FC3A /* Pods_Hackaton_Extia_2019.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		5D7C5091AB572AFF9D209D97 /* Pods-Hackaton Extia 2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackaton Extia 2019.release.xcconfig"; path = "Target Support Files/Pods-Hackaton Extia 2019/Pods-Hackaton Extia 2019.release.xcconfig"; sourceTree = "<group>"; };
 		A7AC070434BC69D189889537 /* Pods-Hackaton Extia 2019.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackaton Extia 2019.debug.xcconfig"; path = "Target Support Files/Pods-Hackaton Extia 2019/Pods-Hackaton Extia 2019.debug.xcconfig"; sourceTree = "<group>"; };
 		AA24118323230CC200E57758 /* PointOfInterestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOfInterestVC.swift; sourceTree = "<group>"; };
+		AAED654923236BA700B56A78 /* ReservedTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservedTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 		17E150222322E6D400C3FB2B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AAED654923236BA700B56A78 /* ReservedTVC.swift */,
 				17041EE92322D77E007763ED /* LoginVC.swift */,
 				17E150242322EFBE00C3FB2B /* ScrollVC.swift */,
 				17E150282322F65D00C3FB2B /* PageVC.swift */,
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17041EEA2322D77E007763ED /* LoginVC.swift in Sources */,
+				AAED654A23236BA700B56A78 /* ReservedTVC.swift in Sources */,
 				17E150292322F65D00C3FB2B /* PageVC.swift in Sources */,
 				AA24118423230CC200E57758 /* PointOfInterestVC.swift in Sources */,
 				1799B2F823233C3200F992B6 /* ProjectStructure.swift in Sources */,

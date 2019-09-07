@@ -18,6 +18,7 @@ class ExampleCardCell: CardCell {
     @IBOutlet weak var dayLbl: UILabel!
     @IBOutlet weak var typeLbl: UILabel!
     @IBOutlet weak var logoImg: UIImageView!
+    @IBOutlet weak var teamLbl: UILabel!
     
     override func prepareForReuse() {
         super.prepareForReuse()

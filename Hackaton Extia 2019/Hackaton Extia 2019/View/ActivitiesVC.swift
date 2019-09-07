@@ -13,6 +13,8 @@ class ActivitiesVC: UIViewController, VerticalCardSwiperDatasource, VerticalCard
     
     private var cardSwiper: VerticalCardSwiper!
     
+    var addedActivity : [Project] =  []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,18 +31,28 @@ class ActivitiesVC: UIViewController, VerticalCardSwiperDatasource, VerticalCard
         print("heeeey")
         if (swipeDirection == .Left) {
             print("left")
+            self.addedActivity.append(ProjectInstance.shared.items[index])
+            ProjectInstance.shared.items.remove(at: index)
         } else {
             ProjectInstance.shared.items.remove(at: index)
             print("right")
+        }
+        if (ProjectInstance.shared.items.count == 0) {
+            if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "reserved") as? ReservedTVC {
+                vc.reserved = addedActivity
+                present(vc, animated: true, completion: nil)
+            } else {
+                print("ntm")
+            }
         }
         print(swipeDirection)
     }
     
     func cardForItemAt(verticalCardSwiperView: VerticalCardSwiperView, cardForItemAt index: Int) -> CardCell {
-        
+        var i = 0;
         if let cardCell = verticalCardSwiperView.dequeueReusableCell(withReuseIdentifier: "ExampleCardCell", for: index) as? ExampleCardCell {
             cardCell.nameLbl.text = ProjectInstance.shared.items[index].name
-            cardCell.teamNbLbl.text = "N° de participant " +  String(ProjectInstance.shared.items[index].projectTeam.count)
+            cardCell.teamNbLbl.text = "N° de participant : " +  String(ProjectInstance.shared.items[index].projectTeam.count)
             cardCell.downloadImage(from: ProjectInstance.shared.items[index].logo)
             switch (ProjectInstance.shared.items[index].type) {
                 case (.formation) :
@@ -58,6 +70,10 @@ class ActivitiesVC: UIViewController, VerticalCardSwiperDatasource, VerticalCard
                 default:
                     break
             }
+           
+            
+                    cardCell.teamLbl.text = ProjectInstance.shared.items[index].projectTeam[i].name + " " + ProjectInstance.shared.items[index].projectTeam[i].role
+            
             return cardCell
         }
         return CardCell()

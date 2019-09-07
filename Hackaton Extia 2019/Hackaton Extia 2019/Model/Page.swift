@@ -18,9 +18,9 @@ enum Page: CaseIterable {
         case .pageZero:
             return "Interlude est l'ami des consultants ! Rejoigner vos collègues de travail autour d'une activité commune, sport, formation, projet personnel"
         case .pageOne:
-            return "organisez vos journées durant vos inters-projets et organisez vous-même votre emploi du temps"
+            return "Organisez vos journées durant vos inters-projets et organisez vous-même votre emploi du temps"
         case .pageTwo:
-            return "Optimiser votre temps d'inter-projet en choisissant ce à quoi il vous plaît, vous êtes pret...."
+            return "Optimiser votre temps d'inter-projet en choisissant ce qu'il vous plaît, vous êtes pret ?"
         }
     }
     

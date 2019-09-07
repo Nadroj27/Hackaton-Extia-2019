@@ -18,7 +18,9 @@ class PointOfInterestVC: UIViewController, UITableViewDataSource,UITableViewDele
     @IBOutlet weak var tableView: UITableView!
     
     var array = [interestCell(name: "Formation", enable: false),
-                 interestCell(name: "Activitées sportives", enable: false)]
+                 interestCell(name: "Activités sportives", enable: false),
+                 interestCell(name: "Projets associatif", enable: false),
+                 interestCell(name: "Projets technique", enable: false)]
     
     override func viewDidLoad() {
         super.viewDidLoad()

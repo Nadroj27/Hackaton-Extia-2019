@@ -24,11 +24,14 @@ class LoginVC: UIViewController {
         
         passwordTextField.layer.cornerRadius = 15.0
         passwordTextField.layer.borderWidth = 1.0
-        //usernameTextField.layer.borderColor = UIColor.black.cgColor
+        
+        loginBtn.layer.cornerRadius = 15.0
+        loginBtn.layer.borderWidth = 2.0
+        loginBtn.layer.borderColor = UIColor.white.cgColor
         
         ProjectInstance.shared.load()
         print(ProjectInstance.shared.items.count)
-
+        
     }
     
     @IBAction func infoBtnPressed(_ sender: Any) {
