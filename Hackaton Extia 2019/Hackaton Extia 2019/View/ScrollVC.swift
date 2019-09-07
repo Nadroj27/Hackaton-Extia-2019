@@ -16,9 +16,10 @@ class ScrollVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.view.backgroundColor = .gray
-        
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "background.png")
+        backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
+        self.view.insertSubview(backgroundImage, at: 0)
         self.setupPageController()
     }
     
@@ -27,11 +28,9 @@ class ScrollVC: UIViewController {
         self.pageController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         self.pageController?.dataSource = self
         self.pageController?.delegate = self
-        self.pageController?.view.backgroundColor = .clear
         self.pageController?.view.frame = CGRect(x: 0,y: 0,width: self.view.frame.width,height: self.view.frame.height)
         self.addChild(self.pageController!)
         self.view.addSubview(self.pageController!.view)
-        
         let initialVC = PageVC(with: pages[0])
         
         self.pageController?.setViewControllers([initialVC], direction: .forward, animated: true, completion: nil)
