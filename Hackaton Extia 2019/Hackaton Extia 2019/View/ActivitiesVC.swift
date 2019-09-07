@@ -25,6 +25,17 @@ class ActivitiesVC: UIViewController, VerticalCardSwiperDatasource, VerticalCard
         cardSwiper.register(nib: UINib(nibName: "ExampleCardCell", bundle: nil), forCellWithReuseIdentifier: "ExampleCardCell")
     }
     
+    func willSwipeCardAway(card: CardCell, index: Int, swipeDirection: SwipeDirection) {
+        print("heeeey")
+        if (swipeDirection == .Left) {
+            print("left")
+        } else {
+            ProjectInstance.shared.items.remove(at: index)
+            print("right")
+        }
+        print(swipeDirection)
+    }
+    
     func cardForItemAt(verticalCardSwiperView: VerticalCardSwiperView, cardForItemAt index: Int) -> CardCell {
         
         if let cardCell = verticalCardSwiperView.dequeueReusableCell(withReuseIdentifier: "ExampleCardCell", for: index) as? ExampleCardCell {
@@ -47,22 +58,9 @@ class ActivitiesVC: UIViewController, VerticalCardSwiperDatasource, VerticalCard
                 default:
                     break
             }
-           
             return cardCell
         }
         return CardCell()
-    }
-    
-    internal func didSwipeCardAway(card: CardCell, index: Int, swipeDirection: SwipeDirection) {
-        
-        
-        if (swipeDirection == .Left) {
-            ProjectInstance.shared.items.remove(at: index)
-            
-        } else {
-            // ajoute a la raie
-        }
-        print(swipeDirection)
     }
     
     func numberOfCards(verticalCardSwiperView: VerticalCardSwiperView) -> Int {
